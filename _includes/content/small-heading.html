@@ -1,0 +1,8 @@
+{% assign align = center %}
+{% if include.align %}{% assign align = include.align %}{% endif %}
+
+<tr>
+    <td style="padding: 0 40px 20px; text-align: {{align}};">
+        <h2 style="margin: 0; font-family: sans-serif; font-size: 18px; line-height: 125%; color: #333333; font-weight: normal;">{{include.content}}</h2>
+    </td>
+</tr>

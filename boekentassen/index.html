@@ -1,0 +1,60 @@
+---
+layout: default
+
+## inbox preview
+inboxPreview: Inbox preview text
+
+## theme
+background: f2f2f2
+buttonBackground: df5c01
+buttonHoverBackground: ac4700
+buttonColor: ffffff
+
+## logo
+logoBackground: false
+#logo: marsvaardig/logo.png
+logoAlign: center
+
+## hero
+heroImageBackground: ffffff
+heroImage: boekentassen/header.png
+
+## settings
+viewAsWebText: Bekijk in je browser
+unsubscribeText: Uitschrijven
+
+## company
+company: Boekentassen & Zo
+address: Hasseltsestraat 100, 3290 Diest, België
+phone: 013 31 15 01
+
+## full bleed
+fullBleedBackground: 72192b
+fullBleedColor: ffffff
+fullBleedText: BE 0423.248.711 | Algemene voorwaarden
+---
+
+{% include single-col-start.html %}
+{% include content/heading.html content='Bedankt voor je bestelling' %}
+{% include content/body.html content='Bedankt voor je bestelling met ordernummer <a href="test">18970103</a>. In deze mail lees je wat je kunt verwachten voor de levering.' %}
+{% include content/body.html content='Zodra je bestelling ons magazijn heeft verlaten, ontvang je per e-mail een <strong>verzendbevestiging.</strong>' %}
+{% include content/small-heading.html content='Bezorgadres' %}
+{% include content/body.html content='Tom Janssens<br>Valleilaan 57<br>3290 Diest<br>België' %}
+{% include content/small-heading.html content='Bestelling wijzigen' %}
+{% include content/body.html content='Wil je je bestelling wijzigen of annuleren? Neem zo snel mogelijk contact met ons op. Bel naar 013 31 15 01 om een wijziging door te geven.' %}
+{% include content/small-heading.html content='Factuuradres' %}
+{% include content/body.html content='Tom Janssens<br>Valleilaan 57<br>3290 Diest<br>België' %}
+{% include content/small-heading.html content='Retourneren' %}
+{% include content/body.html content='Toch niet tevreden over je aankoop? Je krijgt 14 dagen bedenktijd. <a href="test">Bekijk onze retourvoorwaarden.</a>' %}
+{% include content/small-heading.html content='Vragen' %}
+{% include content/body.html content='Neem contact op met onze <a href="test">klantenservice</a>.' %}
+<tr>
+    <td style="padding: 0 40px 30px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555; text-align: left;">
+        <singleline />
+    </td>
+</tr>
+{% include single-col-end.html %}
+
+{% include spacer.html %}
+
+{% include layout/table.html %}

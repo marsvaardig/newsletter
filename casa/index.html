@@ -1,0 +1,58 @@
+---
+layout: default
+
+## inbox preview
+inboxPreview: Inbox preview text
+
+## theme
+background: f2f2f2
+buttonBackground: c75f29
+buttonHoverBackground: 9c4b21
+buttonColor: ffffff
+
+## logo
+logoBackground: false
+#logo: marsvaardig/logo.png
+logoAlign: center
+
+## hero
+heroImageBackground: ffffff
+heroImage: casa/header.png
+
+## settings
+viewAsWebText: Bekijk in je browser
+unsubscribeText: Uitschrijven
+
+## company
+company: Casa Iberico
+address: Kautershoek 1, 3290 Diest, België
+phone: 0477 44 94 85
+
+## full bleed
+fullBleedBackground: 47712e
+fullBleedColor: ffffff
+#fullBleedText: © Restaurant Casa Iberico 2018
+---
+
+<!-- TOM: START; starting a body element, heading has a larger top padding and should always be first -->
+{% include single-col-start.html %}
+{% include content/heading.html content='Nieuw drie gangen menu' align='center' %}
+<!-- TOM; END -->
+
+<!-- TOM; START; add as many includes as needed, every heading / paragraph / image should be a new include -->
+{% include content/small-heading.html content='€ 35,-' align='center' %}
+{% include content/body.html content='Assortiment van koude tapas' align='center' %}
+{% include content/body.html content='---' align='center' %}
+{% include content/body.html content='Paella<br>of<br>Arroz de mariscos<br>of<br>Zarzuela de pescador<br>of<br>Caldereta de Cordero (lamsstoofpot)' align='center' %}
+{% include content/body.html content='---' align='center' %}
+{% include content/body.html content='Dessert van de dag<br>of<br>Koffie' align='center' %}
+{% include content/button.html content='Reserveer nu' align='center' %}
+<!-- TOM; END -->
+
+<!-- TOM; START; for testing in campaignmonitor -->
+{% include campaignmonitor/singleline.html %}
+<!-- TOM; END; for testing in campaignmonitor -->
+
+<!-- TOM: START; stopping a body element -->
+{% include single-col-end.html %}
+<!-- TOM; END -->

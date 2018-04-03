@@ -1,0 +1,56 @@
+---
+layout: default
+
+## inbox preview
+inboxPreview: Inbox preview text
+
+## theme
+background: ffffff
+buttonBackground: 1470a3
+buttonHoverBackground: 0e5075
+buttonColor: ffffff
+
+## logo
+logoBackground: 182a38
+logo: promotionfilm/logo.png
+logoAlign: left
+
+## hero
+heroImageBackground: ffffff
+heroImage: promotionfilm/header.png
+
+## settings
+viewAsWebText: Bekijk in je browser
+unsubscribeText: Uitschrijven
+
+## company
+company: Pr Motion Film
+address: Herengracht 420, 1017 BZ Amsterdam, Nederland
+phone: 020 233 33 51
+
+## full bleed
+fullBleedBackground: 182b39
+fullBleedColor: ffffff
+fullBleedText: © Videoproductie Amsterdam - Pro Motion Film 2018
+---
+
+<!-- TOM: START; starting a body element, heading has a larger top padding and should always be first -->
+{% include single-col-start.html %}
+{% include content/heading.html content='Bedrijfsfilm maken die scoort' %}
+{% include content/small-heading.html content='zes tips voor een optimaal resultaat' %}
+<!-- TOM; END -->
+
+<!-- TOM; START; add as many includes as needed, every heading / paragraph / image should be a new include -->
+{% include content/body.html content='Een bedrijfsfilm maken is iets wat je doet om in een klap je bedrijf op de kaart te zetten. Of om een belangrijke eerste indruk te geven aan je klanten. Zoiets kun je op veel manieren doen. Wat is de juiste manier en hoe behaal je het beste resultaat?' %}
+{% include content/small-heading.html content='1. Een bedrijfsfilm maken als belangrijke aanvulling op je site content' %}
+{% include content/body.html content='Met een video voeg je waardevolle informatie toe aan je bestaande content. Het is niet alleen fijn voor je klanten om naast teksten ook beeld onder ogen te krijgen. Ook Google wordt hier blij van.' %}
+{% include content/body.html content='Je hebt op je site ongetwijfeld informatie staan over je diensten en producten. Zorg er voor dat de bedrijfsfilm hier een goede aanvulling op is en geen herhaling. Je kunt een bedrijfsfilm juist gebruiken om iets extra\'s te vertellen, als toevoeging op je tekst content.' %}
+<!-- TOM; START; for testing in campaignmonitor -->
+{% include campaignmonitor/singleline.html %}
+<!-- TOM; END; for testing in campaignmonitor -->
+{% include content/button.html content='Maar wat dan?' %}
+<!-- TOM; END -->
+
+<!-- TOM: START; stopping a body element -->
+{% include single-col-end.html %}
+<!-- TOM; END -->
