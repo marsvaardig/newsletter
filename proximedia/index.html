@@ -1,0 +1,61 @@
+---
+layout: default
+
+## inbox preview
+inboxPreview: Inbox preview text
+
+## theme
+background: f2f2f2
+buttonBackground: df5c01
+buttonHoverBackground: ac4700
+buttonColor: ffffff
+
+## logo
+logoBackground: false
+logo: marsvaardig/logo.png
+logoAlign: center
+
+## hero
+heroImageBackground: ffffff
+heroImage: marsvaardig/header.jpg
+
+## settings
+viewAsWebText: Bekijk in je browser
+unsubscribeText: Uitschrijven
+
+## company
+company: Marsvaardig
+address: Hollandselaan 2A, 1213 AN Hilversum, Nederland
+phone: 035 80 80 267
+
+## full bleed
+fullBleedBackground: 171d26
+fullBleedColor: ffffff
+#fullBleedText: test
+---
+
+<!-- TOM: START; starting a body element, heading has a larger top padding and should always be first -->
+{% include single-col-start.html %}
+{% include content/heading.html content='Een betaalbare website?' %}
+<!-- TOM; END -->
+
+<!-- TOM; START; add as many includes as needed, every heading / paragraph / image should be a new include -->
+{% include content/body.html content='Kost je website jaarlijks handenvol geld maar ben je toch niet tevreden? Dan bieden wij je graag een <b>uitweg, zonder dubbele kosten</b>!' %}
+{% include content/body.html content='Je betaalt ons pas nadat je jaarlijkse betalingen van je huidige website zijn afgelopen en helpen je met het opzeggen van je contract. Hierdoor heb je <b>geen dubbele kosten</b>.' %}
+{% include content/body.html content='Om je een idee te geven: een website kost bij ons slechts € 300,- per jaar met een éénmalig startbedrag van € 500,-.' padding='0 40px' %}
+{% include content/heading.html content='Overstappen' %}
+{% include content/body.html content='Klanttevredenheid staat bij ons centraal in de overname van je website:' padding='0 40px' %}
+{% include content/list.html content='We bespreken samen je wensen en behoeften,We zetten een proefwebsite op,Je kan de proefwebsite uitgebreid testen,Je beslist of je met ons in zee gaat' type='ordered' padding='0 40px' %}
+{% include content/body.html content='Wij geloven in een goede samenwerking. Daarom hanteren wij <b>geen meerjarige contracten</b> en vragen <b>geen voorschot</b>. Waarom zou je met ons in zee gaan voordat je gezien hebt wat je krijgt? Een auto koop je ook niet zonder een testrit te maken.' %}
+{% include content/body.html content='Heb je interesse? Contacteer mij vrijblijvend voor meer informatie.' %}
+{% include content/body.html content='Vriendelijke groet<br>Tom Janssens' %}
+{% include content/button.html content='Waarom voor Marsvaardig kiezen?' href="https://www.marsvaardig.eu/waarom" %}
+<!-- TOM; END -->
+
+<!-- TOM; START; for testing in campaignmonitor -->
+{% include campaignmonitor/singleline.html %}
+<!-- TOM; END; for testing in campaignmonitor -->
+
+<!-- TOM: START; stopping a body element -->
+{% include single-col-end.html %}
+<!-- TOM; END -->
