@@ -1,12 +1,10 @@
-{% assign align = center %}
 {% assign padding = "0 40px 30px" %}
-{% if include.align %}{% assign align = include.align %}{% endif %}
 {% if include.padding %}{% assign padding = include.padding %}{% endif %}
 
 {% assign items = include.content | split: "," %}
 
 <tr>
-    <td style="padding: {{ padding }}; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555; text-align: {{align}};">
+    <td style="padding: {{ padding }}; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;{% if include.align %} text-align: {{ include.align }};{% endif %}">
       {% if include.type == "ordered" %}
       <ol>
       {% for item in items %}
