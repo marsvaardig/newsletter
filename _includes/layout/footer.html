@@ -2,9 +2,13 @@
 <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
     <tr>
         <td style="padding: 40px 10px; font-family: sans-serif; font-size: 12px; line-height: 140%; text-align: center; color: #888888;" class="x-gmail-data-detectors">
-            <webversion style="color: #cccccc; text-decoration: underline; font-weight: bold;">{{page.viewAsWebText}}</webversion> |
+            {% if page.webversion %}
+            <webversion style="color: #cccccc; text-decoration: underline; font-weight: bold;">{{page.viewAsWebText}}</webversion>
+            {% endif %}{% if page.webversion and page.unsubscribe %} | {% endif %}
+            {% if page.unsubscribe %}
             <unsubscribe style="color: #888888; text-decoration: underline;">{{page.unsubscribeText}}</unsubscribe>
-            <br><br>
+            {% endif %}
+            {% if page.webversion and page.unsubscribe %}<br><br>{% endif %}
             {{page.company}} | {{page.address}} | {{page.phone}}
         </td>
     </tr>
