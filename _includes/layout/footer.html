@@ -9,7 +9,7 @@
             <unsubscribe style="color: #888888; text-decoration: underline;">{{page.unsubscribeText}}</unsubscribe>
             {% endif %}
             {% if page.webversion and page.unsubscribe %}<br><br>{% endif %}
-            {{page.company}} | {{page.address}} | {{page.phone}}
+            {{page.company}} | {{page.address}}{% if page.phone %} | {{page.phone}}{% endif %}
         </td>
     </tr>
 </table>
